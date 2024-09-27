@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .carousel-container {
+            width: 1200px;
+            margin: 1000px auto;
+            position: relative;
+        }
+
+        .carousel-image {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            position: relative;
+        }
+
+        .carousel-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .carousel-button-next {
+            right: 10px;
+        }
+
+        .carousel-button-prev {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carousel-container">
+        <img src="https://cdn.aniblogtracker.com/live/20220809/1660010940.41547.71642.png" alt="Image 1" class="carousel-image" id="currentImage">
+        <div class="carousel-text" id="currentText">O anime Science Fell in Love, So I Tried to Prove it, em tradução, é um anime de 2 temporadas focado na vida dos estudantes universitários de pós-graduação na Universidade de Saitama, em Ciência da Computação, que buscam interpretar o amor de uma forma analítica e lógica.</div>
+
+        <button class="carousel-button carousel-button-prev" onclick="prevImage()"><</button>
+        <button class="carousel-button carousel-button-next" onclick="nextImage()">></button>
+    </div>
+
+    <script>
+        let images = [
+            "https://cdn.aniblogtracker.com/live/20220809/1660010940.41547.71642.png",
+            "https://www.animeexplained.com/wp-content/uploads/2023/08/Fermat-No-Ryori-Manga.jpeg",
+            "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/ac6e22b27d285ed90e72744584d23434.jpe",
+            "https://i0.wp.com/anmtv.com.br/wp-content/uploads/dr-stone-stone-wars.jpg?ssl=1" // adicionar mais imagens
+        ];
+
+        let texts = [
+            "O anime Science Fell in Love, So I Tried to Prove it, em tradução, é um anime de 2 temporadas focado na vida dos estudantes universitários de pós-graduação na Universidade de Saitama, em Ciência da Computação, que buscam interpretar o amor de uma forma analítica e lógica.",
+            "Cozinha de Fermat, discute sobre a vida fracassada de um recém-universitário, que é convidado por um famoso Chef de cozinha francesa para usar suas habilidades matemáticas para cozinhar.",
+            "A série japonesa, Steins;Gate aborda sobre viagem no tempo, a partir da teoria da física do Efeito Borboleta. O objetivo final é salvar o mundo, mas para isso o quão será forte a amizade dos heróis?",
+            "Em Dr.Stone, todos os humanos do planeta Terra se transformam em pedra após um experimento científico fracassado. Cabe um estudante do ensino médio, pródigio em química, e seus amigos para restaurar a Ciência da época primitiva." // correspondencia de titulo
+        ];
+
+        let currentImageIndex = 0;
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            document.getElementById("currentImage").src = images[currentImageIndex];
+            document.getElementById("currentText").textContent = texts[currentImageIndex];
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            document.getElementById("currentImage").src = images[currentImageIndex];
+            document.getElementById("currentText").textContent = texts[currentImageIndex];
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 64%, 69%);
+}
+
+header {
+    background-color: hsl(0, 94%, 25%);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #333;
+}
+
+#my-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f0f4f8;
+    color: #333;
+    text-align: center;
+}
+
+#my-profile img {
+    width: 150px; /* Ajuste o tamanho da imagem */
+    height: 150px; /* Deve ser igual à largura para ser redonda */
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    border: 5px solid #007bff; /* Borda estilosa */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white; /* Cor do texto */
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid transparent; /* Inicialmente sem borda visível */
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.social-links a.github {
+    background-color: #333; /* Cor de fundo do GitHub */
+}
+
+.social-links a.linkedin {
+    background-color: #0077b5; /* Cor de fundo do LinkedIn */
+}
+
+.social-links a.instagram {
+    background-color: #e1306c; /* Cor de fundo do Instagram */
+}
+
+.social-links a:hover {
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+.social-links a.github:hover {
+    background-color: #555; /* Cor ao passar o mouse no GitHub */
+}
+
+.social-links a.linkedin:hover {
+    background-color: #005582; /* Cor ao passar o mouse no LinkedIn */
+}
+
+.social-links a.instagram:hover {
+    background-color: #c32aa3; /* Cor ao passar o mouse no Instagram */
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NipponFlix</title>
+    <link rel="stylesheet" href="/assets/style.css">
+
+    <!-- Chamar a API do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Nome da pagina -->
+    <header>
+        <h1>NipponFlix</h1>
+    </header>
+
+    <!-- Barra de Pesquisa -->
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Escolha um filtro de pesquisa">
+      <div class="search-filters">
+        <div class="filter-option active">Todos</div>
+        <div class="filter-option">Shonen</div>
+        <div class="filter-option">Seinen</div>
+        <div class="filter-option">Shojo</div>
+        <div class="filter-option">Isekai</div>
+      </div>
+    </div>
+
+    <!-- Secao de testes -->
+    <li><a href="explorer.html">Explorer</a></li>
+    <li><a href="serie.html">Série</a></li>
+    <li><a href="teste.html">Teste</a></li>
+
+       <!-- Seção: Novas Séries --> 
+<section id="new-series">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Science Fell in Love, So I Tried to Prove It</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="serie.html?series=science-fell-in-love" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Code Geass</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="serie.html?series=code-geass" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Steins;Gate</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="serie.html?series=steins-gate" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">No game no life</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="serie.html?series=no-game-no-life" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Fermat no Ryori</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="serie.html?series=fermat-no-ryori" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dr. Stone</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="explorer.html?series=dr-stone" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Seção: Direitos da Página -->
+    <footer>
+        <p>&copy; 2024 - NipponFlix</p>
+    </footer>
+
+</body>
+</html>

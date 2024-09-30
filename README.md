@@ -4,4 +4,7 @@ Trabalho Prático I da disciplina Desenvolvimento de Interfaces Web, 1º períod
 
 Izabel Chaves
 
-Acesse: https://github.com/rainbowcrack/portal-series
+Acesse o repositório: https://github.com/rainbowcrack/portal-series
+
+Acesse o site: 
+https://rainbowcrack.github.io/portal-series/

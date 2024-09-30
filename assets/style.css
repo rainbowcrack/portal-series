@@ -36,12 +36,10 @@ h2 {
 }
 
 #my-profile img {
-    
-
-    width: 5%; 
-    height: 5%; /* Deve ser igual à largura */
+    width: 150px; /* Ajuste o tamanho da imagem */
+    height: 150px; /* Deve ser igual à largura para ser redonda */
     border-radius: 50%; /* Faz a imagem ficar redonda */
-    border: 5px solid #007bff; 
+    border: 5px solid #007bff; /* Borda estilosa */
     margin-bottom: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -88,7 +86,7 @@ h2 {
 }
 
 .social-links a.lichess {
-    background-color: #e1306c; /* Cor de fundo do Instagram */
+    background-color: hwb(189 4% 50%); /* Cor de fundo do Instagram */
 }
 
 .social-links a:hover {
@@ -108,7 +106,7 @@ h2 {
 }
 
 .social-links a.lichess:hover {
-    background-color: #c32aa3; /* Cor ao passar o mouse no Instagram */
+    background-color: hsl(189, 65%, 46%); /* Cor ao passar o mouse no Instagram */
 }
 
 .search-bar {

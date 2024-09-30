@@ -14,17 +14,17 @@
             <div class="col-md-8">
                 <section id="overview">
                     <h2>Visão Geral</h2>
-                    <p id="series-overview">Aqui vai a visão geral da série.</p>
+                    <p id="series-overview">Visão geral da série.</p>
                 </section>
                 
                 <section id="cast">
                     <h2>Elenco</h2>
-                    <p id="series-cast">Aqui vai a informação sobre o elenco.</p>
+                    <p id="series-cast">Informação do elenco.</p>
                 </section>
 
                 <section id="seasons">
                     <h2>Temporadas</h2>
-                    <p id="series-seasons">Informações sobre as temporadas.</p>
+                    <p id="series-seasons">Informações das temporadas.</p>
                 </section>
 
                 <section id="episodes">
@@ -40,10 +40,17 @@
         const seriesData = {
             "science-fell-in-love": {
                 title: "Science Fell in Love, So I Tried to Prove it",
-                overview: "Um romance entre dois estudantes de ciência que tentam provar a existência do amor através de métodos científicos.",
+                overview: "O anime é focado na vida dos estudantes universitários de pós-graduação na Universidade de Saitama, em Ciência da Computação, que buscam interpretar o amor de uma forma analítica e lógica.",
                 cast: "John Doe, Jane Smith",
                 seasons: "2 temporadas",
                 episodes: "24 episódios"
+            },
+            "code-geass": {
+                title: "Code Geass Lelouch of the Rebellion",
+                overview: "No ano de 2017 do Calendário Imperial, partes do mundo estão sob o jugo do Sacro Império Britânnico. Lelouch Lamperouge, um príncipe exilado de Britannia, encontra uma estranha garota chamada C.C. que lhe presenteia com um incrível e terrível poder - o Geass. Com esta potente habilidade, Lelouch é capaz de dobrar qualquer um aos seus desejos... Mas seria o poder do Geass uma bênção ou uma maldição?",
+                cast: "Gorō Taniguchi, Ichirō Ōkouchi",
+                seasons: "2 temporadas",
+                episodes: "50 episódios"
             },
             "steins-gate": {
                 title: "Steins;Gate",
@@ -58,14 +65,21 @@
                 cast: "Yusuke Kobayashi, Makoto Furukawa",
                 seasons: "2 temporadas",
                 episodes: "35 episódios"
+            },
+            "fermat": {
+                title: "Fermat No Ryori",
+                overview: "Um estudante do ensino médio gênio da matemática e um jovem prodígio cozinheiro, unem-se para explorar diferentes sabores através de equações.",
+                cast: "Yugo Kobayashi",
+                seasons: "1 temporada",
+                episodes: "10 episódios"
             }
         };
 
-        // Função para obter parâmetros da URL
+        // Função para pegar a URL
         const urlParams = new URLSearchParams(window.location.search);
         const seriesName = urlParams.get('series');
 
-        // Carregar dados da série selecionada
+        // Encaminha os dados de cada série
         if (seriesName && seriesData[seriesName]) {
             const series = seriesData[seriesName];
             document.getElementById('series-title').innerText = series.title;
@@ -76,7 +90,7 @@
         } else {
             document.getElementById('series-title').innerText = "Série não encontrada.";
         }
-    </script>
+    </script> 
     
 </body>
 </html>

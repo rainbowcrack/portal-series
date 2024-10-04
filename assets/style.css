@@ -40,6 +40,8 @@ h2 {
     height: 150px; /* Deve ser igual à largura para ser redonda */
     border-radius: 50%; /* Faz a imagem ficar redonda */
     border: 5px solid #007bff; /* Borda estilosa */
+    width: 200px; /* formata a imagem */
+    height: 200px;
     margin-bottom: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
